@@ -270,10 +270,21 @@ array = (1..50).to_a * 3.sort
 
 array.sort
 
-# Print out not island arrays -- Not sure about the question
+# Print out not island arrays -- Not sure about the question, couldnt really get help
 
 greenland = {name: "Greenland", continent: "North America", island: "island"}
 australia = {name: "Australia", continent: "Oceania", island: "island"}
 canada = {name: "Canada", continent: "North America", island: "not an island"}
 
 countries = [greenland, australia, canada]
+
+
+# Exercise 8 -------------------------------------------------------------------
+
+sum = 0
+
+expenses = [5, 10, 2.50, 0.75]
+
+expenses.each { |x| sum += x}
+
+sum
