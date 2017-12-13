@@ -136,3 +136,38 @@ fav_movies = {scott_pilgrim_vs_the_world: "2010", logan: "2017", "wonder woman":
 both_dates = [1997, 2017]
 
 fav_movies[:"Beauty and the Beast"] = both_dates
+
+# Exercise 4 --------------------------------------------------------------
+
+# Ages less than 20
+
+age = [27, 23, 26, 18]
+
+age.each { |age|
+  if age <= 20
+    puts "#{age}"
+  end
+}
+
+# Finding the oldest
+
+age.sort[-1]
+
+# How many heads
+
+coinflip = ["heads", "tails", "tails", "heads", "heads"]
+
+coinflip.each_with_object(Hash.new(0)) { |coin, counts| counts[coin] += 1 }
+#really no idea how this works just looked it up
+
+# Removing artists
+
+artists = ["Rich Chigga", "joji", "Higher Brothers"]
+
+artists.delete_at(2)
+
+# Changing populations
+
+gtaa = { markham: 330000, mississauga: 760000, brampton: 560000 }
+
+gtaa[:brampton] = 1
