@@ -68,3 +68,38 @@ ages << 0
 movies = {scott_pilgrim_vs_the_world: "2010", logan: "2017", wonder_woman: "2017"}
 
 movies[:logan]
+
+
+# Exercise 2
+
+# Last color in the array
+
+fav_colorsl = ["red", "yellow", "purple", "blue"]
+
+fav_colorsl[-1]
+
+# Add a new city
+
+gtaa = { markham: 330000, mississauga: 760000, brampton: 560000 }
+
+gtaa[:hamilton] = 550000
+
+# Reverse coinflip
+
+coinflip = ["heads", "tails", "tails", "heads", "heads"]
+
+coinflip.reverse
+
+# Population 1 city
+
+gtaa = { markham: 330000, mississauga: 760000, brampton: 560000 }
+
+gtaa[:brampton]
+
+
+# Print I like artists
+
+artists = ["Rich Chigga", "joji", "Higher Brothers"]
+
+artist.each do |artist| puts "I love #{artist}"
+end
