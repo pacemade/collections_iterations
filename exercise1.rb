@@ -213,3 +213,26 @@ new_age = namage.map { |name, age|
 fav_colors = ["red", "yellow", "purple", "blue"]
 
 fav_colors += ["orange", "green"]
+
+# Exercise 6 --------------------------------------------------------
+
+# Arrays within hash
+
+year1 = ["The Matrix", "Star Wars: Episode 1", "The Mummy"]
+year2 = ["Avatar", "Star Trek", "District 9"]
+year3 = ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]
+
+movies = { 1999 => year1, 2009 => year2, 2019 => year3 }
+
+# Arrays within Array
+
+phone_num = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ["*", 0, "#"]]
+
+# 3 Countries and are they islands
+
+
+greenland = {name: "Greenland", continent: "North America", island: "island"}
+australia = {name: "Australia", continent: "Oceania", island: "island"}
+canada = {name: "Canada", continent: "North America", island: "not and island"}
+
+countries = [greenland, australia, canada]
