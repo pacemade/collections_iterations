@@ -288,3 +288,38 @@ expenses = [5, 10, 2.50, 0.75]
 expenses.each { |x| sum += x}
 
 sum
+
+
+# Exercise 9 ----------------------------------------------------------------
+
+# 1
+groceries = [ "eggs", "bacon", "bread", "child"]
+
+groceries.each { |grocery| p "* #{grocery}"}
+
+groceries << "skittles"
+
+# 2
+groceries.size
+
+# 3
+brains = groceries.include? "brains"
+
+if brains == false
+  puts "Need more brains"
+else
+  puts "No need for more brains"
+end
+
+# 4
+groceries[1]
+
+# 5
+groceries.sort!
+
+groceries.each { |grocery| p "* #{grocery}"}
+
+# 6
+groceries.delete_at(2)
+
+groceries.each { |grocery| p "* #{grocery}"}
