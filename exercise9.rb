@@ -31,5 +31,3 @@ sum = 0
 students.each { |cohort, size| sum += size}
 
 sum
-
-# 8
