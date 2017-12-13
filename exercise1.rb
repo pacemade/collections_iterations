@@ -236,3 +236,44 @@ australia = {name: "Australia", continent: "Oceania", island: "island"}
 canada = {name: "Canada", continent: "North America", island: "not and island"}
 
 countries = [greenland, australia, canada]
+
+
+# Exercise 7 --------------------------------------------------------------
+
+# Only if Bart knew
+
+20.times do
+  puts "I will not skateboard in the halls"
+end
+
+# 20 times array styled
+
+skate = "I will not skateboard in the halls"
+
+Array.new(20, skate)
+
+# Array counting from 1-50
+
+(1..50).to_a
+
+# Each loop to find sum of an Array
+
+array = (1..10).to_a
+
+sum = 0
+
+array.each { |count| sum += count }
+
+# Array each number 3 times up to 50
+
+array = (1..50).to_a * 3.sort
+
+array.sort
+
+# Print out not island arrays -- Not sure about the question
+
+greenland = {name: "Greenland", continent: "North America", island: "island"}
+australia = {name: "Australia", continent: "Oceania", island: "island"}
+canada = {name: "Canada", continent: "North America", island: "not an island"}
+
+countries = [greenland, australia, canada]
