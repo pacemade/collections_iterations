@@ -74,9 +74,9 @@ movies[:logan]
 
 # Last color in the array
 
-fav_colorsl = ["red", "yellow", "purple", "blue"]
+fav_colors = ["red", "yellow", "purple", "blue"]
 
-fav_colorsl[-1]
+fav_colors[-1]
 
 # Add a new city
 
@@ -171,3 +171,45 @@ artists.delete_at(2)
 gtaa = { markham: 330000, mississauga: 760000, brampton: 560000 }
 
 gtaa[:brampton] = 1
+
+
+# Exercise 5 ------------------------------------------------------------
+
+# Sum of population
+
+gtaa = { markham: 330000, mississauga: 760000, brampton: 560000 }
+
+gtaa[:markham] + gtaa[:mississauga] + gtaa[:brampton]
+
+# Young or old
+
+namage = { danny: 27, fon: 26, brandon: 23, charmaine: 18 }
+
+namage.each { |name, age|
+  if age >= 20
+    puts "#{name} is old af"
+  else
+    puts "#{name} is a baby"
+  end
+}
+
+# Printing last two Colors
+
+fav_colors = ["red", "yellow", "purple", "blue"]
+
+puts fav_colors[-2..-1]
+
+# Increasing age by 1
+
+namage = { danny: 27, fon: 26, brandon: 23, charmaine: 18 }
+
+new_age = namage.map { |name, age|
+  age += 1
+  puts "#{name} is now #{age}"
+}
+
+# Adding 2 new colors to array
+
+fav_colors = ["red", "yellow", "purple", "blue"]
+
+fav_colors += ["orange", "green"]
